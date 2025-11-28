@@ -1,0 +1,27 @@
+# Python virtual environment
+venv/
+
+# Data files (very large)
+data/
+**/data/
+*.csv
+*.zip
+
+# Python cache + build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VS Code settings
+.vscode/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS metadata files
+.DS_Store
+
+# Logs
+*.log
+
