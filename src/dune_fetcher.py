@@ -14,11 +14,11 @@ load_dotenv()
 
 API_KEY = os.getenv("DUNE_API_KEY")
 
-# Query IDs - all use 2986326 for now (update if different)
-QUERY_ID_VOLUME = os.getenv("DUNE_QUERY_ID_VOLUME")
-QUERY_ID_TVL = os.getenv("DUNE_QUERY_ID_TVL")
-QUERY_ID_FEES = os.getenv("DUNE_QUERY_ID_FEES")
-QUERY_ID_OVERVIEW = os.getenv("DUNE_QUERY_ID_OVERVIEW")
+# Query IDs - get from environment variables, convert to int
+QUERY_ID_VOLUME = int(os.getenv("DUNE_QUERY_ID_VOLUME", "2986326"))
+QUERY_ID_TVL = int(os.getenv("DUNE_QUERY_ID_TVL", "2986326"))
+QUERY_ID_FEES = int(os.getenv("DUNE_QUERY_ID_FEES", "2986326"))
+QUERY_ID_OVERVIEW = int(os.getenv("DUNE_QUERY_ID_OVERVIEW", "2986326"))
 
 
 class AerodromeDataFetcher:
